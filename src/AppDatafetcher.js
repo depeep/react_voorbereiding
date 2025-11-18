@@ -1,3 +1,8 @@
+// dit is de App.js behorende bij opdracht 6 van de voorbereidingsopdrachten
+// voor deze moet axios geinstalleerd zijn. 
+//npm install axios 
+
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 

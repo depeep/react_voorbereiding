@@ -1,3 +1,7 @@
+// dit zijn de eerste 5 oefenbestanden van de voorbereidingsopdrachten
+
+
+
 // import logo from './logo.svg';
 // import './App.css';
 
