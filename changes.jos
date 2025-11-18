@@ -1,0 +1,16 @@
+18-11-2025
+
+vanuit de voorbereidingsopdrachten verdergebouwd:
+-bestand app.js in de map src aangepast 
+--haalt data met fetch uit de json file met de data van Peter (dat was een array, omgebouwd naar json voor het gemak)
+--fetch is misschien ook te gebruiken met een servertje op de backend met xampp erachter, ga ik nog proberen
+--misschien kan dat ook met axios, die heb ik uit de laatste opdracht gesloopt
+--html in het bestand aangepast naar een mooi meeschalend tabelletje van kaarten met het kunstwerk erop
+--het plaatje is klikbaar, maar opent nu een placeholder "reactie.html.
+
+-kunstwerken.json toegevoegd in de map public. Daar kijkt hij standaard
+
+-bestand dataFetcher.css bevat de beschrijving van het meeschalende tabelletje
+
+TODO:
+er staan nog wat foutjes in index.html >> nakijken >> is alleen een probleem op iOS 15, voor nu jammer voor de liefhebbers van afgekloven appeltjes.
