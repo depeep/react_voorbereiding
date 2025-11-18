@@ -8,6 +8,18 @@ import './dataFetcher.css'; //voor het schaalbare grid
 // - axios probeert standaard via HTTP, wat niet werkt voor lokale bestanden buiten een servercontext.
 //  axios is misschien wel te gebruiken als we met een backend werken (haalt daar volgens mij een json vandaan)
 
+//app groter maken, hier functies of hooks  invoegen
+function App() {
+    return (
+      <div>
+        {/* <NameForm/> */}
+        <DataFetcher/>
+        </div>
+    );
+  }
+
+
+  
 // in het json bestand staat:
 //      "id": "Kunstwerk 2",
 //     "title": "Kunstwerk 2",
@@ -16,6 +28,32 @@ import './dataFetcher.css'; //voor het schaalbare grid
 //     "imageUrl": "https://picsum.photos/200/201",
 //     "description": "Een mooie foto 2",
 //     "techniques": ["Foto", "Lange sluitertijd"]
+
+// voorlopig zinloos een formulier erbij
+function NameForm() {
+  const [name, setName] = useState('');
+
+  const handleChange = (event) => {
+    setName(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    alert('A name was submitted: ' + name);
+    event.DataFetcher(); //geeft een error
+    event.preventDefault();
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Name:
+        <input type="text" value={name} onChange={handleChange} />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  );
+}
+//einde formulier
 
 function DataFetcher() {
   const [data, setData] = useState([]);
@@ -36,7 +74,7 @@ function DataFetcher() {
       });
   }, []);
 
-  // hieronder eigenlijk gewoon html editten
+  // hieronder eigenlijk gewoon html editten dit is de basiversie die alles onder elkaar zet
 //   return (
 //     <div>
 //       {data.length > 0 ? (
@@ -84,5 +122,20 @@ function DataFetcher() {
 
 
 
-//het kreng naar de browser sturen
-export default DataFetcher;
+//het kreng naar de browser sturen, is er ook iets anders mogelijk dan default? zou leuk zijn >>Ja dus
+// export default DataFetcher;
+export default App;
+
+
+//TODO:
+
+//klik op plaatje geeft details (weghalen uit datafetcher)
+
+//zoekfunctie zoeken op titel en kunstenaar
+
+//favorieten markeren en bekijken
+
+//opmerkingen achterlaten
+
+//admin panel 
+
