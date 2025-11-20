@@ -66,6 +66,7 @@ function TopBar() {
   return (
     <div>
       <div style={styles.bar}>
+       
         
         <button onClick={handleDummy1}>Dummy 1</button>
         <button onClick={handleDummy2}>Dummy 2</button>
@@ -81,10 +82,11 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#e4ddddff',
+    backgroundColor: '#252525ff',
     padding: '1rem',
-    color: 'white',
+    color: '#aaa9a9ff',
   },
+ 
 };
 
 
@@ -147,8 +149,8 @@ function DataFetcher() {
         </div>
       ) : data.length > 0 ? (
         <>
-          {/* Zoekfunctie, geeft nog niet meer dan een werk weer, dat is nog bagger */}
-          <div style={{ marginBottom: '1rem' }}>
+          {/* Zoekfunctie, geeft nog niet meer dan een werk weer, handlesearch moet nog aangepast naar een grid */}
+          <div style={{ marginBottom: '1rem', marginTop: `1rem` }}>
             <input
               type="text"
               placeholder="Zoek op titel of kunstenaar"
