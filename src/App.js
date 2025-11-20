@@ -147,7 +147,7 @@ function DataFetcher() {
         </div>
       ) : data.length > 0 ? (
         <>
-          {/* Zoekfunctie */}
+          {/* Zoekfunctie, geeft nog niet meer dan een werk weer, dat is nog bagger */}
           <div style={{ marginBottom: '1rem' }}>
             <input
               type="text"
